@@ -5,9 +5,9 @@ public class SunriseSunsetLighting : MonoBehaviour {
 
 	private Light m_light        = null;
 	private float m_sunriseStart = 7.0f;  //  7:00
-	private float m_sunriseEnd   = 8.0f;  //  7:30
+	private float m_sunriseEnd   = 8.0f;  //  8:00
 	private float m_sunsetStart  = 20.0f; // 20:00
-	private float m_sunsetEnd    = 21.0f; // 20:30
+	private float m_sunsetEnd    = 21.0f; // 21:00
 
 	private float m_dayIntensity   = 1.0f;
 	private float m_nightIntensity = 0.0f; // ambient light can be moonshine
