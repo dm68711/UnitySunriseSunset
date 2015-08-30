@@ -81,9 +81,9 @@ public class SunriseSunsetLighting : MonoBehaviour {
 	private float Interpolate(float startValue, float endValue, float startTime, float endTime, float t) {
 		if(t < startTime) return startValue;
 		if(t > endTime)   return endTime;
-		float dt = (endTime-startTime)*(t-startTime);
+		float fractionOfTimeInterval = (t-startTime)/(endTime-startTime);
 		float valueRange = endValue - startValue;
-		return startValue + valueRange*dt;
+		return startValue + valueRange*fractionOfTimeInterval;
 	}
 
 	//
